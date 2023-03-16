@@ -1,0 +1,125 @@
+@font-face {
+    font-family: bobsburgers;
+    src: url('../Fonts/bobs_burgers/bobs_burgers.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: helveticaNeue;
+    src: url(../Fonts/HelveticaNeue-Thin.otf) format('opentype');
+}
+@font-face {
+    font-family: horizon;
+    src: url(../Fonts/horizon_outlined.otf) format('opentype');
+}
+
+body{
+    margin: 0;
+    background-color: #faeed2;
+}
+
+.header{
+    font-family: bobsburgers;
+    font-size: 220%;
+    display: flex;
+    flex-direction:row;
+}
+
+h1{
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+.navbar{
+    display: flex;
+    flex-direction:row;
+}
+
+.navbarWhite{
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: white;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    border: solid 10px black;
+    /* border-left: 5px;
+    border-right: 5px; */
+    border-top: none;
+    border-radius: 0px 0px 100px 100px;
+    transition: 0.3s;
+}
+
+.navbarWhite:hover{
+    transform: translateY(8px);
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+    box-shadow: 0px 10px 20px #000;
+}
+
+.navbarRed{
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: red;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    border: solid 10px black;
+    border-top: none;
+    border-radius: 0px 0px 100px 100px;
+    transition: 0.3s;
+}
+
+.navbarRed:hover{
+    transform: translateY(8px);
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+    box-shadow: 5px 10px 20px #000;
+}
+.navbarTest{
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: red;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    border: solid 10px black;
+    border-top: none;
+    border-radius: 0px 0px 100px 100px;
+    transition: 0.3s;
+}
+
+.navbarTest:hover{
+    transform: translateY(8px);
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+    box-shadow: -5px 10px 20px #000;
+}
+
+
+.blackboard{
+    margin-top: 40px;
+    margin-left: 400px;
+    margin-right: 400px;
+    background-image: linear-gradient(180deg, #7d7d7d, #646464);
+    border: solid 6px #ff4747;
+    box-shadow: -10px 10px 5px #cac0aa;
+}
+
+.innerBlackboard{
+    text-align: center;
+}
+
+.burgerOfTheDay{
+    margin-top: 20px;
+}
+
+.burger{
+    font-family: horizon;
+    font-size: 400%;
+    margin: 0;
+    padding: 0;
+}
+
+.ofTheDay{
+    font-family: helveticaNeue;
+    font-size: 400%;
+    margin: 0;
+    padding: 0;
+}
