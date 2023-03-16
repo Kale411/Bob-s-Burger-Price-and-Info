@@ -1,15 +1,15 @@
 @font-face {
     font-family: bobsburgers;
-    src: url('../Fonts/bobs_burgers/bobs_burgers.ttf') format('truetype');
+    src: url('../fonts/bobs_burgers.ttf') format('truetype');
 }
 
 @font-face {
     font-family: helveticaNeue;
-    src: url(../Fonts/HelveticaNeue-Thin.otf) format('opentype');
+    src: url(../fonts/HelveticaNeue-Thin.otf) format('opentype');
 }
 @font-face {
     font-family: horizon;
-    src: url(../Fonts/horizon_outlined.otf) format('opentype');
+    src: url(/Bob-s-Burger-Price-and-Info/assets/fonts/horizon_outlined.otf) format('opentype');
 }
 
 body{
