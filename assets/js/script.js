@@ -1,1 +1,1 @@
-var 
+// https://github.com/fawazahmed0/currency-api/blob/1/2022-01-02/currencies.json
