@@ -23,25 +23,25 @@
         margin: 0; 
         background-image: url(../Image/BobsBurgerBG.jpeg);
         background-size: 110%;
-        /* height: 100vh;    
+        height: 100vh;    
         width: 100%;
-        backdrop-filter: blur(10px); */
+        backdrop-filter: blur(10px);
     }
-@media only screen and (min-width: 60rem){
 
     .header{
         font-family: bobsburgers;
         font-size: 220%;
         display: flex;
-        flex-direction:row;
     }
 
     .title{
+        Margin-left: 25px;
+        background-color: rgb(36, 36, 36);
         color: white;
     }
 
     h1{
-        padding-left: 2.5%;
+        padding-left: 1.25%;
         padding-right: 1.25%;
     }
 
@@ -154,6 +154,7 @@
         padding-top: 50px;
         padding-bottom: 50px;
         background-color: #faeed2; 
+        border-radius: 50px;
     }
 
     .blackboard{
@@ -190,5 +191,54 @@
         padding-bottom: 20px;
         font-family: helveticaNeue;
         text-align: center;
+    }
+
+
+@media only screen and (max-width: 1260px){
+    .SecondBG{
+        margin-left: 100px auto;
+        margin-right: 100px auto;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+    .burger{
+        font-family: horizon;
+        color: #f3f6f4;
+        font-size: 300%;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .SecondBG{
+        margin-left: 100px;
+        margin-right: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+@media only screen and (max-width: 620px) {
+    .burger{
+        font-family: horizon;
+        color: #f3f6f4;
+        font-size: 200%;
+    }
+}
+@media only screen and (max-width: 515px) {
+    .header{
+        justify-content: center;
+    }
+    
+    .burger{
+        font-family: horizon;
+        color: #f3f6f4;
+        font-size: 150%;
+    }
+}
+
+@media only screen and (max-width: 485px) {
+    .header{
+        justify-content: center;
+        /* text-align: center; */
+        /* align-items: center; */
     }
 }
