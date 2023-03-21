@@ -1,20 +1,32 @@
 @font-face {
     font-family: bobsburgers;
-    src: url('../fonts/bobs_burgers.ttf') format('truetype');
+    src: url('../Fonts/bobs_burgers/bobs_burgers.ttf') format('truetype');
 }
 
 @font-face {
     font-family: helveticaNeue;
-    src: url(../fonts/HelveticaNeue-Thin.otf) format('opentype');
+    src: url('../Fonts/HelveticaNeue-Thin.otf') format('opentype');
 }
 @font-face {
     font-family: horizon;
-    src: url(/Bob-s-Burger-Price-and-Info/assets/fonts/horizon_outlined.otf) format('opentype');
+    src: url('../Fonts/horizon_outlined.otf') format('opentype');
+}
+@font-face {
+    font-family: chalk-dash;
+    src: url('../Fonts/Chalk\ Dash.ttf') format('truetype');
+}
+@font-face {
+    font-family: right-dash;
+    src: url('../Fonts/Right\ Chalk.ttf') format('truetype');
 }
 
 body{
-    margin: 0;
-    background-color: #faeed2;
+    margin: 0; 
+    background-image: url(../Image/BobsBurgerBG.jpeg);
+    background-size: 110%;
+    height: 100vh;    
+    width: 100%;
+    backdrop-filter: blur(10px);
 }
 
 .header{
@@ -24,14 +36,22 @@ body{
     flex-direction:row;
 }
 
+.title{
+    color: white;
+}
+
 h1{
     padding-left: 2.5%;
-    padding-right: 2.5%;
+    padding-right: 1.25%;
 }
 
 .navbar{
+    position: absolute;
     display: flex;
     flex-direction:row;
+    padding-right: 200px;
+    margin-left: 40%;
+    margin-right: 10px;
 }
 
 .navbarWhite{
@@ -52,10 +72,30 @@ h1{
     transform: translateY(8px);
     transition: ease-in-out;
     transition-duration: 0.3s;
-    box-shadow: 0px 10px 20px #000;
+    box-shadow: 0px 15px 20px #000;
 }
 
-.navbarRed{
+.navbarRedLeft{
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: red;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    border: solid 10px black;
+    border-top: none;
+    border-radius: 0px 0px 100px 100px;
+    transition: 0.3s;
+    background-size: 50%;
+}
+
+.navbarRedLeft:hover{
+    background-color: red;
+    transform: translateY(8px);
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+    box-shadow: -5px 15px 15px #000;
+}
+.navbarRedRight{
     margin-top: 0;
     margin-bottom: 0;
     background-color: red;
@@ -67,13 +107,22 @@ h1{
     transition: 0.3s;
 }
 
-.navbarRed:hover{
+.navbarRedRight:hover{
     transform: translateY(8px);
     transition: ease-in-out;
     transition-duration: 0.3s;
-    box-shadow: 5px 10px 20px #000;
+    box-shadow: 5px 15px 15px #000;
 }
-.navbarTest{
+
+.navbarBG{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    padding-right: 200px;
+    margin-left: 40%;
+}
+
+.navbarBGRed{
     margin-top: 0;
     margin-bottom: 0;
     background-color: red;
@@ -82,24 +131,35 @@ h1{
     border: solid 10px black;
     border-top: none;
     border-radius: 0px 0px 100px 100px;
-    transition: 0.3s;
+    background-size: 50%;
 }
 
-.navbarTest:hover{
-    transform: translateY(8px);
-    transition: ease-in-out;
-    transition-duration: 0.3s;
-    box-shadow: -5px 10px 20px #000;
+.navbarBGWhite{
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: white;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    border: solid 10px black;
+    border-top: none;
+    border-radius: 0px 0px 100px 100px;
 }
 
+.SecondBG{
+    margin-top: 40px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #faeed2; 
+}
 
 .blackboard{
-    margin-top: 40px;
-    margin-left: 400px;
-    margin-right: 400px;
     background-image: linear-gradient(180deg, #7d7d7d, #646464);
-    border: solid 6px #ff4747;
-    box-shadow: -10px 10px 5px #cac0aa;
+    border: solid 6px #b73232;
+    box-shadow: -1px 1px 0px 0px #922828, -2px 2px 0px 0px #922828, -3px 3px 0px 0px #922828, -4px 4px 0px 0px #922828, -5px 5px 0px 0px #922828,-6px 6px 0px 0px #922828,-7px 7px 0px 0px #922828,-8px 8px 0px 0px #922828;
 }
 
 .innerBlackboard{
@@ -112,86 +172,21 @@ h1{
 
 .burger{
     font-family: horizon;
+    color: #f3f6f4;
     font-size: 400%;
     margin: 0;
     padding: 0;
 }
 
 .ofTheDay{
-    font-family: helveticaNeue;
+    font-family: right-dash;
     font-size: 400%;
+    color: #f3f6f4;
     margin: 0;
     padding: 0;
 }
 
-/* Dropdown Button */
-.priceButton{
-display: flex;
-justify-content: center;
-padding: 15px;
-
-}
-.btn {
-    background-color: #efd45f;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    column-gap: var(--gap);
-    padding: 0.6rem;
-    cursor: pointer;
-    border-radius: var(--radius);
-    border: none;
-    box-shadow: var(--shadow);
-    position: relative;
-  }
-  
-  .bx {
-    font-size: 1.1rem;
-  }
-  
-  .dropdown {
-    position: absolute;
-    width: 250px;
-    box-shadow: var(--shadow);
-    border-radius: var(--radius);
-    margin-top: 0.3rem;
-    background: #d4541c;
-  
-    visibility: hidden;
-    opacity: 0;
-    transform: translateY(0.5rem);
-    transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
-  }
-  
-  .dropdown a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: var(--gap);
-    padding: 0.8rem 1rem;
-    text-decoration: none;
-    color: black;
-  }
-  
-  .dropdown a:hover {
-    background-color: var(--color);
-    color: #3d2c1c;
-  }
-  
-  .show {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0rem);
-  }
-  
-  .arrow {
-    transform: rotate(180deg);
-    transition: 0.2s ease;
-  }
-h3{
-display: flex;
-justify-content: center;
-padding: 15px;
-
-
+.burgerOfTheDayBtn{
+    font-family: helveticaNeue;
+    text-align: center;
 }
