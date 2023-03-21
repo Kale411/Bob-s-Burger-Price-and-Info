@@ -193,6 +193,25 @@
         text-align: center;
     }
 
+    .display-block {
+        display:block;
+    }
+
+    .burgerEl{
+        font-family: horizon;
+        color: #f3f6f4;
+        font-size: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .ofTheDayEl{
+        font-family: right-dash;
+        font-size: 150%;
+        color: #f3f6f4;
+        margin: 0;
+        padding: 0;
+    }
 
 @media only screen and (max-width: 1260px){
     .SecondBG{

@@ -16,20 +16,22 @@ function burgerOfTheDay() {
 function displayInfo(burger) {
 
     var infoEl = document.createElement('div');
-    infoEl.classList = '';
 
     var burgerNameEl = document.createElement('span');
     burgerNameEl.textContent = burger.name;
+    burgerNameEl.classList = "display-block burgerEl";
     infoEl.appendChild(burgerNameEl);
     console.log(burger.name);
 
     var burgerPriceEl = document.createElement('span');
     burgerPriceEl.textContent = burger.price;
+    burgerPriceEl.classList = "display-block ofTheDayEl";
     infoEl.appendChild(burgerPriceEl);
     console.log(burger.price);
 
     var burgerEpisodeEl = document.createElement('span');
     burgerEpisodeEl.textContent = 'Season ' + burger.season + ' Episode ' + burger.episode;
+    burgerEpisodeEl.classList = "display-block burgerEl";
     infoEl.appendChild(burgerEpisodeEl);
     console.log(burger.episode);
 
