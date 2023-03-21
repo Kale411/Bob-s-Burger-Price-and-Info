@@ -1,5 +1,4 @@
-
-infoContainerEl = document.querySelector('#burgerOfTheDayInput');
+var infoContainerEl = document.querySelector('#burgerOfTheDayInput');
 
 function burgerOfTheDay() {
     let burgerNo = Math.floor(Math.random() * 333) + 1;
