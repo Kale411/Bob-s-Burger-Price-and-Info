@@ -187,6 +187,7 @@ h1{
 }
 
 .burgerOfTheDayBtn{
+    padding-bottom: 20px;
     font-family: helveticaNeue;
     text-align: center;
 }
