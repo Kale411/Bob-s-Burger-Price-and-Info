@@ -36,3 +36,5 @@ function displayInfo(burger) {
 
     infoContainerEl.appendChild(infoEl);
 }
+
+burgerOfTheDay();
