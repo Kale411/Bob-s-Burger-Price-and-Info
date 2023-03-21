@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="./assets/css/styles.css"/>
+    <link rel="stylesheet" href="./modal/assets/css/mStyle.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
@@ -23,18 +24,26 @@
                             <h2 class="burger">Burger</h2>
                             <h4 class="ofTheDay">OF THE DAY</h4>
                         </div>
-                        <h2 class="burgerOfTheDayInput" id="burgerOfTheDayInput">
-                        <!-- burgerOfTheDayInput -->
-                        </h2>
-                        <div id="burgerOfTheDayBtn" class="burgerOfTheDayBtn">
-                            <button type="button" class="btnTxt" onclick='alert("OW!!! Stop Hitting Me!!!!")'>
-                                Burger Of The Day
-                            </button>
+                    
+                        <button id="burgerBtn">Show me the Burger of the Day!</button>
+
+                        <div id="burgerDisplay" class="pop-up">
+                        
+                          <div class="burger-content">
+                            <span class="ex">&times;</span>
+                            <h2 class="burgerOfTheDayInput" id="burgerOfTheDayInput">
+                                <!-- burgerOfTheDayInput -->
+                                </h2>
+                            <h4>Converted Price</h4>
+                    
+                          </div>
+                        
                         </div>
                     </container>
                 </main>
             </div>
         </p>
         <script src="./assets/js/script.js"></script>
+        <script src="./modal/assets/js/mScript.js"></script>
     </body>
 </html>
