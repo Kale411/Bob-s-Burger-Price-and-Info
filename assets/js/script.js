@@ -17,7 +17,7 @@ function burgerOfTheDay() {
 function displayInfo(burger) {
 
     var infoEl = document.createElement('div');
-    infoEl.classList = ''
+    infoEl.classList = '';
 
     var burgerNameEl = document.createElement('span');
     burgerNameEl.textContent = burger.name;
