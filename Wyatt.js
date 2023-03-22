@@ -42,6 +42,7 @@ function initPage () {
   })
   });
   
+  
   // Toggle dropdown function
   const toggleDropdown = function () {
     dropdownMenu.classList.toggle("show");
