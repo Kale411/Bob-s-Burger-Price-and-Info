@@ -212,7 +212,88 @@
         margin: 0;
         padding: 0;
     }
+    .priceButton{
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+    }
+    /* Dropdown Button */
+.priceButton{
+display: flex;
+justify-content: center;
+padding: 15px;
 
+}
+.btn {
+    background-color: #efd45f;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: var(--gap);
+    padding: 0.6rem;
+    cursor: pointer;
+    border-radius: var(--radius);
+    border: none;
+    box-shadow: var(--shadow);
+    position: relative;
+    
+  }
+  #burgerBtn{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+
+  }
+  .bx {
+    font-size: 1.1rem;
+  }
+  
+  .dropdown {
+    position: absolute;
+    width: 250px;
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    margin-top: 0.3rem;
+    background: #d4541c;
+  
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(0.5rem);
+    transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
+  }
+  
+  .dropdown a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: var(--gap);
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .dropdown a:hover {
+    background-color: var(--color);
+    color: #3d2c1c;
+  }
+  
+  .show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+  
+  .arrow {
+    transform: rotate(180deg);
+    transition: 0.2s ease;
+  }
+h3{
+display: flex;
+justify-content: center;
+padding: 15px;
+
+
+}
 @media only screen and (max-width: 1260px){
     .SecondBG{
         margin-left: 100px auto;
