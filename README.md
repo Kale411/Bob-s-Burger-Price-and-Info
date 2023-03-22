@@ -20,7 +20,6 @@ In the pop up menu a button will appear "burger price" when clicked the user wil
 
 Link: https://kale411.github.io/Bob-s-Burger-Price-and-Info/
 
-Link: https://rapidapi.com/exchangerateapi/api/exchangerate-api/
 
 ## ScreenShot of Deployed Application:
 
@@ -36,7 +35,7 @@ Link: ![Screenshot (45)](https://user-images.githubusercontent.com/116604140/226
 
 Link: https://bobs-burgers-api-ui.herokuapp.com/documentation#burger-of-the-day
 
-Link: 
+Link: Link: https://rapidapi.com/exchangerateapi/api/exchangerate-api/
 
 ## License:
 
