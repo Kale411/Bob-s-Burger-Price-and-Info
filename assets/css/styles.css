@@ -1,6 +1,6 @@
 @font-face {
     font-family: bobsburgers;
-    src: url('../Fonts/bobs_burgers/bobs_burgers.ttf') format('truetype');
+    src: url('../fonts/bobs_burgers/bobs_burgers.ttf') format('truetype');
 }
 
 @font-face {
@@ -290,8 +290,8 @@ padding: 15px;
 h3{
 display: flex;
 justify-content: center;
-padding: 15px;
-
+padding: 5px;
+margin: 0px;
 
 }
 @media only screen and (max-width: 1260px){
