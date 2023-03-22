@@ -1,130 +1,223 @@
 @font-face {
     font-family: bobsburgers;
-    src: url('../fonts/bobs_burgers.ttf') format('truetype');
+    src: url('../Fonts/bobs_burgers/bobs_burgers.ttf') format('truetype');
 }
 
 @font-face {
     font-family: helveticaNeue;
-    src: url(../fonts/HelveticaNeue-Thin.otf) format('opentype');
+    src: url('../Fonts/HelveticaNeue-Thin.otf') format('opentype');
 }
 @font-face {
     font-family: horizon;
-    src: url(/Bob-s-Burger-Price-and-Info/assets/fonts/horizon_outlined.otf) format('opentype');
+    src: url('../Fonts/horizon_outlined.otf') format('opentype');
 }
-
-body{
-    margin: 0;
-    background-color: #faeed2;
+@font-face {
+    font-family: chalk-dash;
+    src: url('../Fonts/Chalk\ Dash.ttf') format('truetype');
 }
-
-.header{
-    font-family: bobsburgers;
-    font-size: 220%;
-    display: flex;
-    flex-direction:row;
+@font-face {
+    font-family: right-dash;
+    src: url('../Fonts/Right\ Chalk.ttf') format('truetype');
 }
+    body{
+        margin: 0; 
+        background-image: url(../Image/BobsBurgerBG.jpeg);
+        background-size: 110%;
+        height: 100vh;    
+        width: 100%;
+        backdrop-filter: blur(10px);
+    }
 
-h1{
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-}
+    .header{
+        font-family: bobsburgers;
+        font-size: 220%;
+        display: flex;
+    }
 
-.navbar{
-    display: flex;
-    flex-direction:row;
-}
+    .title{
+        Margin-left: 25px;
+        background-color: rgb(36, 36, 36);
+        color: white;
+    }
 
-.navbarWhite{
-    margin-top: 0;
-    margin-bottom: 0;
-    background-color: white;
-    padding-bottom: 40px;
-    padding-top: 40px;
-    border: solid 10px black;
-    /* border-left: 5px;
-    border-right: 5px; */
-    border-top: none;
-    border-radius: 0px 0px 100px 100px;
-    transition: 0.3s;
-}
+    h1{
+        padding-left: 1.25%;
+        padding-right: 1.25%;
+    }
 
-.navbarWhite:hover{
-    transform: translateY(8px);
-    transition: ease-in-out;
-    transition-duration: 0.3s;
-    box-shadow: 0px 10px 20px #000;
-}
+    .navbar{
+        position: absolute;
+        display: flex;
+        flex-direction:row;
+        padding-right: 200px;
+        margin-left: 40%;
+        margin-right: 10px;
+    }
 
-.navbarRed{
-    margin-top: 0;
-    margin-bottom: 0;
-    background-color: red;
-    padding-bottom: 40px;
-    padding-top: 40px;
-    border: solid 10px black;
-    border-top: none;
-    border-radius: 0px 0px 100px 100px;
-    transition: 0.3s;
-}
+    .navbarWhite{
+        margin-top: 0;
+        margin-bottom: 0;
+        background-color: white;
+        padding-bottom: 40px;
+        padding-top: 40px;
+        border: solid 10px black;
+        /* border-left: 5px;
+        border-right: 5px; */
+        border-top: none;
+        border-radius: 0px 0px 100px 100px;
+        transition: 0.3s;
+    }
 
-.navbarRed:hover{
-    transform: translateY(8px);
-    transition: ease-in-out;
-    transition-duration: 0.3s;
-    box-shadow: 5px 10px 20px #000;
-}
-.navbarTest{
-    margin-top: 0;
-    margin-bottom: 0;
-    background-color: red;
-    padding-bottom: 40px;
-    padding-top: 40px;
-    border: solid 10px black;
-    border-top: none;
-    border-radius: 0px 0px 100px 100px;
-    transition: 0.3s;
-}
+    .navbarWhite:hover{
+        transform: translateY(8px);
+        transition: ease-in-out;
+        transition-duration: 0.3s;
+        box-shadow: 0px 15px 20px #000;
+    }
 
-.navbarTest:hover{
-    transform: translateY(8px);
-    transition: ease-in-out;
-    transition-duration: 0.3s;
-    box-shadow: -5px 10px 20px #000;
-}
+    .navbarRedLeft{
+        margin-top: 0;
+        margin-bottom: 0;
+        background-color: red;
+        padding-bottom: 40px;
+        padding-top: 40px;
+        border: solid 10px black;
+        border-top: none;
+        border-radius: 0px 0px 100px 100px;
+        transition: 0.3s;
+        background-size: 50%;
+    }
 
+    .navbarRedLeft:hover{
+        background-color: red;
+        transform: translateY(8px);
+        transition: ease-in-out;
+        transition-duration: 0.3s;
+        box-shadow: -5px 15px 15px #000;
+    }
+    .navbarRedRight{
+        margin-top: 0;
+        margin-bottom: 0;
+        background-color: red;
+        padding-bottom: 40px;
+        padding-top: 40px;
+        border: solid 10px black;
+        border-top: none;
+        border-radius: 0px 0px 100px 100px;
+        transition: 0.3s;
+    }
 
-.blackboard{
-    margin-top: 40px;
-    margin-left: 400px;
-    margin-right: 400px;
-    background-image: linear-gradient(180deg, #7d7d7d, #646464);
-    border: solid 6px #ff4747;
-    box-shadow: -10px 10px 5px #cac0aa;
-}
+    .navbarRedRight:hover{
+        transform: translateY(8px);
+        transition: ease-in-out;
+        transition-duration: 0.3s;
+        box-shadow: 5px 15px 15px #000;
+    }
 
-.innerBlackboard{
-    text-align: center;
-}
+    .navbarBG{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        padding-right: 200px;
+        margin-left: 40%;
+    }
 
-.burgerOfTheDay{
-    margin-top: 20px;
-}
+    .navbarBGRed{
+        margin-top: 0;
+        margin-bottom: 0;
+        background-color: red;
+        padding-bottom: 40px;
+        padding-top: 40px;
+        border: solid 10px black;
+        border-top: none;
+        border-radius: 0px 0px 100px 100px;
+        background-size: 50%;
+    }
 
-.burger{
-    font-family: horizon;
-    font-size: 400%;
-    margin: 0;
-    padding: 0;
-}
+    .navbarBGWhite{
+        margin-top: 0;
+        margin-bottom: 0;
+        background-color: white;
+        padding-bottom: 40px;
+        padding-top: 40px;
+        border: solid 10px black;
+        border-top: none;
+        border-radius: 0px 0px 100px 100px;
+    }
 
-.ofTheDay{
-    font-family: helveticaNeue;
-    font-size: 400%;
-    margin: 0;
-    padding: 0;
-}
+    .SecondBG{
+        margin-top: 40px;
+        margin-left: 200px;
+        margin-right: 200px;
+        padding-left: 200px;
+        padding-right: 200px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #faeed2; 
+        border-radius: 50px;
+    }
 
-/* Dropdown Button */
+    .blackboard{
+        background-image: linear-gradient(180deg, #7d7d7d, #646464);
+        border: solid 6px #b73232;
+        box-shadow: -1px 1px 0px 0px #922828, -2px 2px 0px 0px #922828, -3px 3px 0px 0px #922828, -4px 4px 0px 0px #922828, -5px 5px 0px 0px #922828,-6px 6px 0px 0px #922828,-7px 7px 0px 0px #922828,-8px 8px 0px 0px #922828;
+    }
+
+    .innerBlackboard{
+        text-align: center;
+    }
+
+    .burgerOfTheDay{
+        margin-top: 20px;
+    }
+
+    .burger{
+        font-family: horizon;
+        color: #f3f6f4;
+        font-size: 400%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .ofTheDay{
+        font-family: right-dash;
+        font-size: 400%;
+        color: #f3f6f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    .burgerOfTheDayBtn{
+        padding-bottom: 20px;
+        font-family: helveticaNeue;
+        text-align: center;
+    }
+
+    .display-block {
+        display:block;
+    }
+
+    .burgerEl{
+        font-family: horizon;
+        color: #f3f6f4;
+        font-size: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .ofTheDayEl{
+        font-family: right-dash;
+        font-size: 150%;
+        color: #f3f6f4;
+        margin: 0;
+        padding: 0;
+    }
+    .priceButton{
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+    }
+    /* Dropdown Button */
 .priceButton{
 display: flex;
 justify-content: center;
@@ -143,8 +236,14 @@ padding: 15px;
     border: none;
     box-shadow: var(--shadow);
     position: relative;
+    
   }
-  
+  #burgerBtn{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+
+  }
   .bx {
     font-size: 1.1rem;
   }
@@ -194,4 +293,52 @@ justify-content: center;
 padding: 15px;
 
 
+}
+@media only screen and (max-width: 1260px){
+    .SecondBG{
+        margin-left: 100px auto;
+        margin-right: 100px auto;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+    .burger{
+        font-family: horizon;
+        color: #f3f6f4;
+        font-size: 300%;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .SecondBG{
+        margin-left: 100px;
+        margin-right: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+@media only screen and (max-width: 620px) {
+    .burger{
+        font-family: horizon;
+        color: #f3f6f4;
+        font-size: 200%;
+    }
+}
+@media only screen and (max-width: 515px) {
+    .header{
+        justify-content: center;
+    }
+    
+    .burger{
+        font-family: horizon;
+        color: #f3f6f4;
+        font-size: 150%;
+    }
+}
+
+@media only screen and (max-width: 485px) {
+    .header{
+        justify-content: center;
+        /* text-align: center; */
+        /* align-items: center; */
+    }
 }

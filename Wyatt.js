@@ -35,12 +35,13 @@ function initPage () {
       if (CUR === e.target.id){
         console.log(CUR, data.rates[CUR])
         const h3 = document.createElement('h3')
-        h3.textContent = `Currency: ${CUR} and Rate: ${(data.rates[CUR] * 5.95).toFixed(2)}`
+        h3.textContent = `Currency: ${CUR} and Rate: ${(data.rates[CUR] * 5.55).toFixed(2)}`
         userChoiceEl.append(h3)
       }
     }
   })
   });
+  
   
   // Toggle dropdown function
   const toggleDropdown = function () {

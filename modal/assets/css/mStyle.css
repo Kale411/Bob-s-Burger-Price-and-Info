@@ -2,6 +2,8 @@
     font-family: bobsburgers;
     src: url('../fonts/bobs_burgers.ttf') format('truetype');
 }
+
+/*Formatting for the modal window*/
 #burgerDisplay {
     display: none; 
     position: fixed; 
@@ -15,6 +17,7 @@
     background-color: rgba(0, 0, 0, 0.753); 
   }
   
+  /*The modal content itself*/
   .burger-content {
     background-color: rgb(32, 32, 32);
     width: 50%;
@@ -31,6 +34,7 @@
 
   }
   
+ /*Close Modal button*/
   .ex {
     color: #aaa;
     float: right;
