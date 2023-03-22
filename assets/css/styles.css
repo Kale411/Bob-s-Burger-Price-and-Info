@@ -5,23 +5,23 @@
 
 @font-face {
     font-family: helveticaNeue;
-    src: url('../Fonts/HelveticaNeue-Thin.otf') format('opentype');
+    src: url('../fonts/HelveticaNeue-Thin.otf') format('opentype');
 }
 @font-face {
     font-family: horizon;
-    src: url('../Fonts/horizon_outlined.otf') format('opentype');
+    src: url('../fonts/horizon_outlined.otf') format('opentype');
 }
 @font-face {
     font-family: chalk-dash;
-    src: url('../Fonts/Chalk\ Dash.ttf') format('truetype');
+    src: url('../fonts/Chalk\ Dash.ttf') format('truetype');
 }
 @font-face {
     font-family: right-dash;
-    src: url('../Fonts/Right\ Chalk.ttf') format('truetype');
+    src: url('../fonts/Right\ Chalk.ttf') format('truetype');
 }
     body{
         margin: 0; 
-        background-image: url(../Image/BobsBurgerBG.jpeg);
+        background-image: src: url(../Image/BobsBurgerBG.jpeg);
         background-size: 110%;
         height: 100vh;    
         width: 100%;
