@@ -19,9 +19,10 @@
     font-family: right-dash;
     src: url('../fonts/Right\ Chalk.ttf') format('truetype');
 }
-    body{
+
+body {
         margin: 0; 
-        background-image: src: url(../Image/BobsBurgerBG.jpeg);
+        background-image: url(../Image/BobsBurgerBG.jpeg);
         background-size: 110%;
         height: 100vh;    
         width: 100%;
