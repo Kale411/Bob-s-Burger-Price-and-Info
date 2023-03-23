@@ -5,6 +5,8 @@ var burgerBtn = document.getElementById("burgerBtn");
 var ex = document.getElementsByClassName("ex")[0];
 
 burgerBtn.onclick = function() {
+  burgerOfTheDay();
+  
   burgerDisplay.style.display = "block";
 }
 
