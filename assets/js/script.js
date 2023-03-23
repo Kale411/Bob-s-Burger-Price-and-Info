@@ -15,6 +15,8 @@ function burgerOfTheDay() {
 
 function displayInfo(burger) {
 
+    infoContainerEl.innerHTML = '';
+
     var infoEl = document.createElement('div');
 
     var burgerNameEl = document.createElement('span');
